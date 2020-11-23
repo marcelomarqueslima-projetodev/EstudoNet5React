@@ -1,4 +1,4 @@
-﻿const requestUsuaiosType = 'REQUEST_USUARIOS';
+﻿const requestUsuariosType = 'REQUEST_USUARIOS';
 const receiveUsuariosType = 'RECEIVE_USUARIOS';
 const requestUsuarioType = 'REQUEST_USUARIO';
 const receiveUsuarioType = 'RECEIVE_USUARIO';
@@ -14,7 +14,7 @@ let currentusuario = {};
 
 export const actionCreators = {
     requestUsuarios: () => async (dispatch, getState) => {
-        dispatch({ type: requestUsuaiosType });
+        dispatch({ type: requestUsuariosType });
 
         const url = `api/Usuarios`;
         const response = await fetch(url);
