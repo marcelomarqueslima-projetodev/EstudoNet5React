@@ -9,11 +9,11 @@ namespace EstudoNet5React.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         { }
 
-        public DbSet<City> City { get; set; }
+        public DbSet<Usuario> Usuario { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfiguration(new CityMapping());
+            modelBuilder.ApplyConfiguration(new UsuarioMapping());
             base.OnModelCreating(modelBuilder);
         }
     }
